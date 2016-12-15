@@ -1,0 +1,9 @@
+<div class="btn-group">
+  <button *ngFor="let loc of locales" class="btn"
+    [class.btn-default]="!isLocale(loc.lang)"
+    [class.btn-primary]="isLocale(loc.lang)"
+    (click)="toggleLocale(loc.lang)">{{ loc.name }}
+  </button>
+</div>
+<h1>{{ today }}</h1>
+
