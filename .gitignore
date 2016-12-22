@@ -1,9 +1,10 @@
 node_modules
 app/*.js*
 *.sublime-workspace
+npm-debug.log
 
 # ignore content of the AOT folder
 aot/*
 # except for the index file and its server configuration
-!aot/bs-config.json
+!aot/bs-config.js
 !aot/index.html
